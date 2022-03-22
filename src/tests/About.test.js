@@ -4,12 +4,6 @@ import renderWithRouter from './renderWithRouter';
 import About from '../components/About';
 
 describe('Testa About', () => {
-  // it('Teste se a página contém as informações sobre a Pokédex.', () => {
-  //   renderWithRouter(<About />);
-
-  //   // const info = screen.getByRole('section');
-  //   // expect(info).toBeInTheDocument();
-  // });
   it('Teste se a página contém um heading h2 com o texto About Pokédex.',
     () => {
       renderWithRouter(<About />);
