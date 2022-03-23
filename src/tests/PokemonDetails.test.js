@@ -8,7 +8,7 @@ describe('Testa PokemonDetails', () => {
   it('Teste se as informações detalhadas são mostradas na tela.', () => {
     const { history } = renderWithRouter(<App />);
     const pikachu = screen.getByText(/pikachu/i);
-    const linkDetais = screen.getByRole('link', { name: 'More details' });
+    const linkDetais = screen.getByRole('link', { name: /More details/i });
     expect(pikachu).toBeInTheDocument();
     expect(linkDetais).toBeInTheDocument();
 
